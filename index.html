@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlackJack 21</title>
+  <link rel="shortcut icon" href="cards/icons8-paus-16.png" type="image/x-icon">
+  <link href="css/estilo.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="conteudo-principal">
+    <div class="nome-jogo">
+      <h1>BlackJack 21</h1>
+    </div>
+    <div class="area-de-jogo"></div>
+    <div class="mesa-de-cartas">
+      <div class="monte">
+        <img onclick="virarCarta()" src="cards/back_01.png" />
+      </div>
+      <div id="cartas-jogador" class="carta-na-mao"></div>
+      </div>
+      <div id="controles">
+        <button onclick="pegarCarta()" id="botaoMais">Pegar outra carta</button>
+        <button onclick="pararJogo()" id="botaoParar">Parar</button>
+        <button onclick="novoJogo()" id="botaoNovo">Novo jogo</button>
+      </div>
+      <div id="somas-cartas">
+        <p id="pontos"> </p>
+      </div>
+      <p id="mensagem"></p>
+    </div>
+  </div>
+  <script src="js/blackjack.js"></script>
+</body>
+</html>
